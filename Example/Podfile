@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'CZHButton_Example' do
+  pod 'CZHButton', :path => '../'
+
+  target 'CZHButton_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
