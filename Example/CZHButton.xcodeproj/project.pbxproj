@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		375130B3CA9A836F8E4B64AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		375130B3CA9A836F8E4B64AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		41D259DD1AA2FD83DAFAEBB9 /* Pods_CZHButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CZHButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48286F205F9E5F95E4007A03 /* Pods_CZHButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CZHButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D924902E09CEB49ED099D99 /* Pods-CZHButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CZHButton_Example.debug.xcconfig"; path = "Target Support Files/Pods-CZHButton_Example/Pods-CZHButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,9 +64,9 @@
 		7FFA1763F764CEAE2BFABE9F /* Pods-CZHButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CZHButton_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CZHButton_Tests/Pods-CZHButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D04D6E0CA7F54FA7EB8E67FC /* Pods-CZHButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CZHButton_Tests.release.xcconfig"; path = "Target Support Files/Pods-CZHButton_Tests/Pods-CZHButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E13A85A7F778DC04A52AD7E1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E13A85A7F778DC04A52AD7E1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F351716B7046DCF5BC7AB7EC /* Pods-CZHButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CZHButton_Example.release.xcconfig"; path = "Target Support Files/Pods-CZHButton_Example/Pods-CZHButton_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FD45B38D63A12880EE4E16D3 /* CZHButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CZHButton.podspec; path = ../CZHButton.podspec; sourceTree = "<group>"; };
+		FD45B38D63A12880EE4E16D3 /* CZHButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CZHButton.podspec; path = ../CZHButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				7FFA1763F764CEAE2BFABE9F /* Pods-CZHButton_Tests.debug.xcconfig */,
 				D04D6E0CA7F54FA7EB8E67FC /* Pods-CZHButton_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

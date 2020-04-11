@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0740DEE6BDC89D312CE595E5BB1EF0D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		17700BD97F8E46F117E90E7BC951E2C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		3830879F2C9605AB3DBDA9299F118953 /* Pods-CZHButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23EA3E264AC9540A2E5EDC4964E869B3 /* Pods-CZHButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D21169C2441BCA100E15BBD /* CHButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D21169A2441BCA100E15BBD /* CHButton.h */; };
+		3D21169D2441BCA100E15BBD /* CHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D21169B2441BCA100E15BBD /* CHButton.m */; };
+		3F435B66EE7B1A4832563D8ADFDDA9A1 /* CZHButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7914FD8EE6A09674CA2D2367596739 /* CZHButton-dummy.m */; };
+		3FDA05BEDF95DF129405438D76B817D6 /* Pods-CZHButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7D01E75BED62EA01E8599280059D2B /* Pods-CZHButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		838C4C258199506F9F82810EA1D5DB0C /* Pods-CZHButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A24021B6D2293F1007F597B43E5CE109 /* Pods-CZHButton_Tests-dummy.m */; };
+		9497D7EB997A9B99E8CC952E069AAED4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E117C9681324938FD58A3EA5BCDB0DC8 /* Pods-CZHButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC80AB29BECB300AE7340DDF8F141F9 /* Pods-CZHButton_Example-dummy.m */; };
+		EA75B2995F673A2BB7F4F3A1E5533BBC /* CZHButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5780E13F31E80702A829175E4560083A /* CZHButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C7A58E18B0E638440458B49DE0DF91B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F3CCEE566DB61C19BF6B2DE8E88F3C7;
+			remoteInfo = "Pods-CZHButton_Example";
+		};
+		57179A1565705221EE46466D62E71982 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABF4DA70BFD22750B2C10A150C4C52BE;
+			remoteInfo = CZHButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		049B7E3D463D14746301AD207AB5AD1C /* Pods-CZHButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CZHButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E7914FD8EE6A09674CA2D2367596739 /* CZHButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CZHButton-dummy.m"; sourceTree = "<group>"; };
+		172D0F89C2EEFDA9041D4636748C9A51 /* Pods-CZHButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CZHButton_Example.modulemap"; sourceTree = "<group>"; };
+		17A3941BB9A65AA9A3E58A678116523E /* CZHButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CZHButton.modulemap; sourceTree = "<group>"; };
+		193A182E4FCD38047F1656E049931B8D /* Pods_CZHButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CZHButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD87501DED890471121C79DDF4F8674 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		216BF56DD69AD2E27395D2726C03242D /* CZHButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CZHButton-Info.plist"; sourceTree = "<group>"; };
+		23C5BEC08A54CFEEA0B4EDD91D75E25E /* CZHButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CZHButton-prefix.pch"; sourceTree = "<group>"; };
+		23EA3E264AC9540A2E5EDC4964E869B3 /* Pods-CZHButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CZHButton_Example-umbrella.h"; sourceTree = "<group>"; };
+		2708A9C2492426AD13622A2E817F2E91 /* Pods-CZHButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CZHButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		298B3159C627BDAF7F43736B9E7C0468 /* Pods_CZHButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CZHButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC80AB29BECB300AE7340DDF8F141F9 /* Pods-CZHButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CZHButton_Example-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3D21169A2441BCA100E15BBD /* CHButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHButton.h; path = CZHButton/Classes/CHButton.h; sourceTree = "<group>"; };
+		3D21169B2441BCA100E15BBD /* CHButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHButton.m; path = CZHButton/Classes/CHButton.m; sourceTree = "<group>"; };
+		3DF0CCF713DAB73BA778FB72A074A19F /* Pods-CZHButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CZHButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3F671ED97F490B4A6D317B663DC229D2 /* Pods-CZHButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CZHButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		43875977C64EEA0D45D0022752527532 /* Pods-CZHButton_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CZHButton_Tests-Info.plist"; sourceTree = "<group>"; };
+		5118F91C6207D5A8144763120F780AC3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5780E13F31E80702A829175E4560083A /* CZHButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CZHButton-umbrella.h"; sourceTree = "<group>"; };
+		653B93DD8E527F961B6AD29C2257B995 /* Pods-CZHButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CZHButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7422660790A1CAEF7F1350B059E96745 /* Pods-CZHButton_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CZHButton_Example-Info.plist"; sourceTree = "<group>"; };
+		7656495E78902F1DD48A9AC408250744 /* CZHButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CZHButton.release.xcconfig; sourceTree = "<group>"; };
+		8642D93BE2C2C027FBBF8B74D22BB8E7 /* Pods-CZHButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CZHButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		869C4AAB704DA7F8F8B7502BDD2B0085 /* Pods-CZHButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CZHButton_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A24021B6D2293F1007F597B43E5CE109 /* Pods-CZHButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CZHButton_Tests-dummy.m"; sourceTree = "<group>"; };
+		A80EA44D28E79122B597D28307397E59 /* CZHButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CZHButton.debug.xcconfig; sourceTree = "<group>"; };
+		B3D84F0722A8985D1EA1A791846FB3A4 /* Pods-CZHButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CZHButton_Example-frameworks.sh"; sourceTree = "<group>"; };
+		BBE2241DFD96F58F998C76007DC7DB22 /* Pods-CZHButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CZHButton_Tests.modulemap"; sourceTree = "<group>"; };
+		CA7D01E75BED62EA01E8599280059D2B /* Pods-CZHButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CZHButton_Tests-umbrella.h"; sourceTree = "<group>"; };
+		DA9B0939BA1DBFAF6956B2703BDF4969 /* CZHButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CZHButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2555EFCC139B0F4B03EA810DB677132 /* Pods-CZHButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CZHButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD76A0BBF17992F5ABD3A60C7E2B407C /* CZHButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CZHButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		293B605D06858CE742BE9FE818830302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17700BD97F8E46F117E90E7BC951E2C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BC631595AC3A77FB409182CED97F8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0740DEE6BDC89D312CE595E5BB1EF0D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3202976BD7956BA18E9C83A7824747F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9497D7EB997A9B99E8CC952E069AAED4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05722558FA4257968E1707AF173D1AB8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4860AEA86DFB1E7A3A9CC9C76DE24751 /* CZHButton */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4860AEA86DFB1E7A3A9CC9C76DE24751 /* CZHButton */ = {
+			isa = PBXGroup;
+			children = (
+				3D21169A2441BCA100E15BBD /* CHButton.h */,
+				3D21169B2441BCA100E15BBD /* CHButton.m */,
+				52F04667C3DD81433D7B41691B4032A4 /* Pod */,
+				9A47FEE9B303B5E9C37B2850067B231D /* Support Files */,
+			);
+			name = CZHButton;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		507404589CFFF0C0E891FCEAE91A7D00 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5395340D2BDB1D76A92422062902B64 /* Pods-CZHButton_Example */,
+				C07C44EC0502B9D0BC641060D6F6BCBF /* Pods-CZHButton_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		52F04667C3DD81433D7B41691B4032A4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FD76A0BBF17992F5ABD3A60C7E2B407C /* CZHButton.podspec */,
+				5118F91C6207D5A8144763120F780AC3 /* LICENSE */,
+				1FD87501DED890471121C79DDF4F8674 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		955D84EDD7C3AC9DF86112D84F30D311 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B0939BA1DBFAF6956B2703BDF4969 /* CZHButton.framework */,
+				298B3159C627BDAF7F43736B9E7C0468 /* Pods_CZHButton_Example.framework */,
+				193A182E4FCD38047F1656E049931B8D /* Pods_CZHButton_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A47FEE9B303B5E9C37B2850067B231D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				17A3941BB9A65AA9A3E58A678116523E /* CZHButton.modulemap */,
+				0E7914FD8EE6A09674CA2D2367596739 /* CZHButton-dummy.m */,
+				216BF56DD69AD2E27395D2726C03242D /* CZHButton-Info.plist */,
+				23C5BEC08A54CFEEA0B4EDD91D75E25E /* CZHButton-prefix.pch */,
+				5780E13F31E80702A829175E4560083A /* CZHButton-umbrella.h */,
+				A80EA44D28E79122B597D28307397E59 /* CZHButton.debug.xcconfig */,
+				7656495E78902F1DD48A9AC408250744 /* CZHButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CZHButton";
+			sourceTree = "<group>";
+		};
+		A5395340D2BDB1D76A92422062902B64 /* Pods-CZHButton_Example */ = {
+			isa = PBXGroup;
+			children = (
+				172D0F89C2EEFDA9041D4636748C9A51 /* Pods-CZHButton_Example.modulemap */,
+				653B93DD8E527F961B6AD29C2257B995 /* Pods-CZHButton_Example-acknowledgements.markdown */,
+				2708A9C2492426AD13622A2E817F2E91 /* Pods-CZHButton_Example-acknowledgements.plist */,
+				2FC80AB29BECB300AE7340DDF8F141F9 /* Pods-CZHButton_Example-dummy.m */,
+				B3D84F0722A8985D1EA1A791846FB3A4 /* Pods-CZHButton_Example-frameworks.sh */,
+				7422660790A1CAEF7F1350B059E96745 /* Pods-CZHButton_Example-Info.plist */,
+				23EA3E264AC9540A2E5EDC4964E869B3 /* Pods-CZHButton_Example-umbrella.h */,
+				3F671ED97F490B4A6D317B663DC229D2 /* Pods-CZHButton_Example.debug.xcconfig */,
+				869C4AAB704DA7F8F8B7502BDD2B0085 /* Pods-CZHButton_Example.release.xcconfig */,
+			);
+			name = "Pods-CZHButton_Example";
+			path = "Target Support Files/Pods-CZHButton_Example";
+			sourceTree = "<group>";
+		};
+		C07C44EC0502B9D0BC641060D6F6BCBF /* Pods-CZHButton_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BBE2241DFD96F58F998C76007DC7DB22 /* Pods-CZHButton_Tests.modulemap */,
+				8642D93BE2C2C027FBBF8B74D22BB8E7 /* Pods-CZHButton_Tests-acknowledgements.markdown */,
+				F2555EFCC139B0F4B03EA810DB677132 /* Pods-CZHButton_Tests-acknowledgements.plist */,
+				A24021B6D2293F1007F597B43E5CE109 /* Pods-CZHButton_Tests-dummy.m */,
+				43875977C64EEA0D45D0022752527532 /* Pods-CZHButton_Tests-Info.plist */,
+				CA7D01E75BED62EA01E8599280059D2B /* Pods-CZHButton_Tests-umbrella.h */,
+				049B7E3D463D14746301AD207AB5AD1C /* Pods-CZHButton_Tests.debug.xcconfig */,
+				3DF0CCF713DAB73BA778FB72A074A19F /* Pods-CZHButton_Tests.release.xcconfig */,
+			);
+			name = "Pods-CZHButton_Tests";
+			path = "Target Support Files/Pods-CZHButton_Tests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				05722558FA4257968E1707AF173D1AB8 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				955D84EDD7C3AC9DF86112D84F30D311 /* Products */,
+				507404589CFFF0C0E891FCEAE91A7D00 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B38EC881DC9FFEB9926AA0C4F729DA7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3830879F2C9605AB3DBDA9299F118953 /* Pods-CZHButton_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D993CAAFCA5FAEBCB405F8229EB79694 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FDA05BEDF95DF129405438D76B817D6 /* Pods-CZHButton_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1FE1D1147F4E4939AB32F1E2EB7138 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA75B2995F673A2BB7F4F3A1E5533BBC /* CZHButton-umbrella.h in Headers */,
+				3D21169C2441BCA100E15BBD /* CHButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2F3CCEE566DB61C19BF6B2DE8E88F3C7 /* Pods-CZHButton_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1F4CF31FE34C478C0992C7A747B764 /* Build configuration list for PBXNativeTarget "Pods-CZHButton_Example" */;
+			buildPhases = (
+				B38EC881DC9FFEB9926AA0C4F729DA7A /* Headers */,
+				F7D1534C46D4A6E27200D13A763ADC66 /* Sources */,
+				D3202976BD7956BA18E9C83A7824747F /* Frameworks */,
+				927B2D9E86118C704F5DC73F3FAE5568 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09B72D356959F57197B9C949FE9B6989 /* PBXTargetDependency */,
+			);
+			name = "Pods-CZHButton_Example";
+			productName = "Pods-CZHButton_Example";
+			productReference = 298B3159C627BDAF7F43736B9E7C0468 /* Pods_CZHButton_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ABF4DA70BFD22750B2C10A150C4C52BE /* CZHButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 587D044D04116DA0974F07F397280B55 /* Build configuration list for PBXNativeTarget "CZHButton" */;
+			buildPhases = (
+				FC1FE1D1147F4E4939AB32F1E2EB7138 /* Headers */,
+				3E3E0DCC8092E4D7AA0028A40FE8A346 /* Sources */,
+				8BC631595AC3A77FB409182CED97F8DB /* Frameworks */,
+				691670B6AD549EB767BA0AA17F6D8CE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CZHButton;
+			productName = CZHButton;
+			productReference = DA9B0939BA1DBFAF6956B2703BDF4969 /* CZHButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EED8E1BD2B305CA88B0E846471275D5B /* Pods-CZHButton_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDBA80F2BA578B06DEF4471451A1217B /* Build configuration list for PBXNativeTarget "Pods-CZHButton_Tests" */;
+			buildPhases = (
+				D993CAAFCA5FAEBCB405F8229EB79694 /* Headers */,
+				5F45B43C7F7769ED9D5765C705B4B1D5 /* Sources */,
+				293B605D06858CE742BE9FE818830302 /* Frameworks */,
+				0DAF415538DA1EBF2C07DBAE759E7D6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAF483750F400AF3868B0060C2BA5B05 /* PBXTargetDependency */,
+			);
+			name = "Pods-CZHButton_Tests";
+			productName = "Pods-CZHButton_Tests";
+			productReference = 193A182E4FCD38047F1656E049931B8D /* Pods_CZHButton_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 955D84EDD7C3AC9DF86112D84F30D311 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABF4DA70BFD22750B2C10A150C4C52BE /* CZHButton */,
+				2F3CCEE566DB61C19BF6B2DE8E88F3C7 /* Pods-CZHButton_Example */,
+				EED8E1BD2B305CA88B0E846471275D5B /* Pods-CZHButton_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DAF415538DA1EBF2C07DBAE759E7D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		691670B6AD549EB767BA0AA17F6D8CE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927B2D9E86118C704F5DC73F3FAE5568 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E3E0DCC8092E4D7AA0028A40FE8A346 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D21169D2441BCA100E15BBD /* CHButton.m in Sources */,
+				3F435B66EE7B1A4832563D8ADFDDA9A1 /* CZHButton-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F45B43C7F7769ED9D5765C705B4B1D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838C4C258199506F9F82810EA1D5DB0C /* Pods-CZHButton_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D1534C46D4A6E27200D13A763ADC66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E117C9681324938FD58A3EA5BCDB0DC8 /* Pods-CZHButton_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09B72D356959F57197B9C949FE9B6989 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CZHButton;
+			target = ABF4DA70BFD22750B2C10A150C4C52BE /* CZHButton */;
+			targetProxy = 57179A1565705221EE46466D62E71982 /* PBXContainerItemProxy */;
+		};
+		EAF483750F400AF3868B0060C2BA5B05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CZHButton_Example";
+			target = 2F3CCEE566DB61C19BF6B2DE8E88F3C7 /* Pods-CZHButton_Example */;
+			targetProxy = 3C7A58E18B0E638440458B49DE0DF91B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6CBD33BEE63C09AA801038269B36EF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7656495E78902F1DD48A9AC408250744 /* CZHButton.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CZHButton/CZHButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CZHButton/CZHButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CZHButton/CZHButton.modulemap";
+				PRODUCT_MODULE_NAME = CZHButton;
+				PRODUCT_NAME = CZHButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		80396E32D44E992F1C81B4D279E16726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049B7E3D463D14746301AD207AB5AD1C /* Pods-CZHButton_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CZHButton_Tests/Pods-CZHButton_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CZHButton_Tests/Pods-CZHButton_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9B04BFC42BAB5563EF6401F79E07AE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF0CCF713DAB73BA778FB72A074A19F /* Pods-CZHButton_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CZHButton_Tests/Pods-CZHButton_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CZHButton_Tests/Pods-CZHButton_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF3816BBA2EC1D5E0D52BF4B6B08C528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A80EA44D28E79122B597D28307397E59 /* CZHButton.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CZHButton/CZHButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CZHButton/CZHButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CZHButton/CZHButton.modulemap";
+				PRODUCT_MODULE_NAME = CZHButton;
+				PRODUCT_NAME = CZHButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D8171D3C30F0C0DEB6D58F85FCB690C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 869C4AAB704DA7F8F8B7502BDD2B0085 /* Pods-CZHButton_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CZHButton_Example/Pods-CZHButton_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CZHButton_Example/Pods-CZHButton_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F7CAEDA45BAD81562C337F3C861CB3A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F671ED97F490B4A6D317B663DC229D2 /* Pods-CZHButton_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CZHButton_Example/Pods-CZHButton_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CZHButton_Example/Pods-CZHButton_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		587D044D04116DA0974F07F397280B55 /* Build configuration list for PBXNativeTarget "CZHButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF3816BBA2EC1D5E0D52BF4B6B08C528 /* Debug */,
+				6CBD33BEE63C09AA801038269B36EF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDBA80F2BA578B06DEF4471451A1217B /* Build configuration list for PBXNativeTarget "Pods-CZHButton_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80396E32D44E992F1C81B4D279E16726 /* Debug */,
+				A9B04BFC42BAB5563EF6401F79E07AE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1F4CF31FE34C478C0992C7A747B764 /* Build configuration list for PBXNativeTarget "Pods-CZHButton_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7CAEDA45BAD81562C337F3C861CB3A2 /* Debug */,
+				D8171D3C30F0C0DEB6D58F85FCB690C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
