@@ -34,6 +34,9 @@ typedef NS_ENUM(NSUInteger, CHButtonImagePosition) {
 @property (nonatomic, assign) IBInspectable CGFloat cornerRadius;
 
 #pragma mark 弹出菜单相关属性
+/// 如果列表只是string 请传入此数组
+@property (nonatomic, strong) NSArray<NSString *> *titleArray;
+/// 如果是请求获取的数据模型列表，请传入此数据源（数组模型请实现MenuButtonDataSource协议，模型添加itemTitle字段用来在菜单中显示）
 @property (nonatomic, strong) NSArray<id<MenuButtonDataSource>> *dataArray;
 @property(nonatomic,assign) CGFloat menuWidth;
 @property(nonatomic,assign) CGFloat maxHeight;
@@ -49,7 +52,8 @@ typedef NS_ENUM(NSUInteger, CHButtonImagePosition) {
 /// 当弹出菜单的width != 按钮的withd时，可设置菜单与按钮左对齐还是右对齐 // 设置UIViewContentModeRight  UIViewContentModeLeft 有效
 @property (nonatomic,assign) UIViewContentMode contentAlignment;
 
-@property(nonatomic,copy) void(^clickBlock)(NSInteger index,id<MenuButtonDataSource> data);
+@property(nonatomic,copy) void(^clickBlock)(NSInteger index,id data);
+-(void)showMenu;
 @end
 
 NS_ASSUME_NONNULL_END

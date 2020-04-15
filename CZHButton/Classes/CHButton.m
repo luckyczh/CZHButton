@@ -257,8 +257,10 @@ UIEdgeVerticalValue(UIEdgeInsets inset){
 
 + (instancetype)buttonWithType:(UIButtonType)buttonType{
     CHButton *btn = [super buttonWithType:buttonType];
-    btn.titleLabel.font = [UIFont systemFontOfSize:13];
-    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:14];
+    [btn setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
+    [btn setImage:IMG(@"icon_s_jts_") forState:UIControlStateNormal];
+    [btn setImage:IMG(@"icon_s_jt") forState:UIControlStateSelected];
     btn.imagePosition = CHButtonImagePositionRight;
     btn.spaceTitleAndImage = 5;
     return btn;
@@ -293,23 +295,30 @@ UIEdgeVerticalValue(UIEdgeInsets inset){
     _dataArray = dataArray;
     [self addTarget:self action:@selector(tapAction) forControlEvents:UIControlEventTouchUpInside];
 }
+-(void)setTitleArray:(NSArray<NSString *> *)titleArray{
+    _titleArray = titleArray;
+    [self addTarget:self action:@selector(tapAction) forControlEvents:UIControlEventTouchUpInside];
+}
 -(void)tapMaskView:(UITapGestureRecognizer *)gesture{
   CGPoint point =  [gesture locationInView:self.maskView];
     if(!CGRectContainsPoint(self.tableView.superview.frame, point)){
         [self hideMenu];
     }
 }
+-(BOOL)isTitleArray{
+    return self.titleArray.count;
+}
 #pragma mark - UITableViewDataSource
-
+#define AutoTitleValue(leftValue,rightValue) ([self isTitleArray] ? leftValue : rightValue)
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.dataArray.count;
+    return AutoTitleValue(self.titleArray.count, self.dataArray.count);
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"menucell" forIndexPath:indexPath];
 //    cell.imageView.image = IMG(@"1");
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.textLabel.text = self.dataArray[indexPath.row].itemTitle;
+    cell.textLabel.text =  AutoTitleValue(self.titleArray[indexPath.row], self.dataArray[indexPath.row].itemTitle);
     cell.textLabel.textAlignment = self.textAlignment;
     cell.textLabel.font = self.titleFont ?: [UIFont systemFontOfSize:16];
     if ((self.selectedIndexPath == indexPath) && self.showSelected) {
@@ -326,10 +335,10 @@ UIEdgeVerticalValue(UIEdgeInsets inset){
     return self.rowHeight ?: 40;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self setTitle:self.dataArray[indexPath.row].itemTitle forState:UIControlStateNormal];
+    [self setTitle:AutoTitleValue(self.titleArray[indexPath.row], self.dataArray[indexPath.row].itemTitle) forState:UIControlStateNormal];
     self.selectedIndexPath = indexPath;
     if (self.clickBlock) {
-        self.clickBlock(indexPath.row,self.dataArray[indexPath.row]);
+        self.clickBlock(indexPath.row,AutoTitleValue(self.titleArray[indexPath.row], self.dataArray[indexPath.row].itemTitle));
     }
     [self hideMenu];
     
@@ -340,7 +349,7 @@ UIEdgeVerticalValue(UIEdgeInsets inset){
     // 计算按钮在屏幕上的位置
     CGRect react = [self.superview convertRect:self.frame toView:self.maskView];
     // 菜单宽高
-    CGFloat height = self.maxHeight ?: MIN(self.maxHeight, self.dataArray.count * (self.rowHeight ?: 40));
+    CGFloat height = self.maxHeight ?: MIN(100, [self.tableView numberOfRowsInSection:0] * (self.rowHeight ?: 40));
     CGFloat width = self.menuWidth ?: react.size.width;
     if (!self.contentAlignment) {
         if (CGRectGetMinX(react)+width <= SCREEN_WIDTH) { 
